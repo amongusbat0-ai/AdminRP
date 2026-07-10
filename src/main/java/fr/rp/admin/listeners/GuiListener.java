@@ -74,7 +74,7 @@ public class GuiListener implements Listener {
                     plugin.getSanctionManager().unmute(cible);
                     admin.sendMessage(ChatColor.GREEN + "✔ " + cible.getName() + " a ete demute.");
                 }
-                case WOODEN_DOOR -> {
+                case OAK_DOOR -> {
                     admin.closeInventory();
                     Player enLigne = cible.getPlayer();
                     if (enLigne != null) {
