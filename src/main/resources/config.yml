@@ -1,0 +1,65 @@
+# ============================================
+#   Configuration AdminRP - Grades custom
+# ============================================
+# Couleurs disponibles (codes Minecraft) :
+# &0 noir &1 bleu fonce &2 vert fonce &3 cyan fonce &4 rouge fonce
+# &5 violet &6 orange &7 gris &8 gris fonce &9 bleu
+# &a vert &b cyan &c rouge &d rose &e jaune &f blanc
+# &l gras &o italique &n souligne
+
+grades:
+  joueur:
+    priorite: 0
+    prefixe: "&7[Joueur]"
+    logo: "☺"
+    couleur-nom: "&7"
+    permissions: []
+    par-defaut: true
+
+  vip:
+    priorite: 10
+    prefixe: "&e[VIP]"
+    logo: "★"
+    couleur-nom: "&e"
+    permissions:
+      - "adminrp.vip"
+
+  moderateur:
+    priorite: 50
+    prefixe: "&b[Moderateur]"
+    logo: "⚔"
+    couleur-nom: "&b"
+    permissions:
+      - "adminrp.staff"
+
+  admin:
+    priorite: 90
+    prefixe: "&c[Admin]"
+    logo: "⚡"
+    couleur-nom: "&c"
+    permissions:
+      - "adminrp.staff"
+      - "adminrp.admin"
+
+  fondateur:
+    priorite: 100
+    prefixe: "&4&l[Fondateur]"
+    logo: "♛"
+    couleur-nom: "&4&l"
+    permissions:
+      - "adminrp.staff"
+      - "adminrp.admin"
+
+# Format du chat: {prefixe} {logo} {couleur}{joueur}: {message}
+format-chat: "{prefixe} {logo} {couleur}{joueur}&r: {message}"
+
+# Duree par defaut si non precisee (en minutes), 0 = permanent
+duree-ban-defaut: 0
+duree-mute-defaut: 60
+
+# Nombre de warns avant sanction automatique
+warns-avant-mute: 3
+warns-avant-ban: 5
+
+# Diffuser les sanctions a tout le serveur
+broadcast-sanctions: true

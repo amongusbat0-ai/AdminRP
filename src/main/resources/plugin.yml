@@ -1,0 +1,46 @@
+name: AdminRP
+version: '1.0.0'
+main: fr.rp.admin.AdminRP
+api-version: '1.21'
+author: Baptiste
+description: Systeme d'administration RP - sanctions, grades custom, logs
+
+commands:
+  ban:
+    description: Bannir un joueur
+    usage: /ban <joueur> [duree] [raison]
+  unban:
+    description: Debannir un joueur
+    usage: /unban <joueur>
+  mute:
+    description: Rendre muet un joueur
+    usage: /mute <joueur> [duree] [raison]
+  unmute:
+    description: Demuter un joueur
+    usage: /unmute <joueur>
+  kick:
+    description: Expulser un joueur
+    usage: /kick <joueur> [raison]
+  warn:
+    description: Avertir un joueur
+    usage: /warn <joueur> [raison]
+  sanctions:
+    description: Voir l'historique de sanctions d'un joueur
+    usage: /sanctions <joueur>
+  grade:
+    description: Gerer le grade d'un joueur
+    usage: /grade <set|info> <joueur> [grade]
+  admin:
+    description: Ouvrir le panel d'administration
+    usage: /admin
+  grades:
+    description: Liste des grades disponibles
+    usage: /grades
+
+permissions:
+  adminrp.staff:
+    description: Acces aux commandes de sanction
+    default: op
+  adminrp.admin:
+    description: Acces complet au panel admin
+    default: op
