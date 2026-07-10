@@ -77,7 +77,7 @@ public class AdminPanelGui {
                 List.of(ChatColor.GRAY + "Mute 1h par defaut")));
         inv.setItem(12, creerItem(Material.LIME_DYE, ChatColor.GREEN + "Demuter (/unmute)",
                 List.of(ChatColor.GRAY + "Retirer le mute")));
-        inv.setItem(13, creerItem(Material.WOODEN_DOOR, ChatColor.GOLD + "Expulser (/kick)",
+        inv.setItem(13, creerItem(Material.OAK_DOOR, ChatColor.GOLD + "Expulser (/kick)",
                 List.of(ChatColor.GRAY + "Le joueur doit etre en ligne")));
         inv.setItem(14, creerItem(Material.BARRIER, ChatColor.RED + "Bannir (/ban)",
                 List.of(ChatColor.GRAY + "Bannissement permanent")));
